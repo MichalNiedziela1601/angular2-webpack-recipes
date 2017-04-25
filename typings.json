@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.9.0+20170324193834",
+    "zone.js": "registry:dt/zone.js#0.0.0+20160510002910"
+  }
+}
