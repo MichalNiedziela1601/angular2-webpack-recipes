@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <h1>Hello into Angular 2 with Webpack 2</h1>
+
+    <input type="text" [(ngModel)]="model" name="description">
+    <button type="submit" (click)="addTodo()">Submit</button>
+
+    <p>{{model}}</p>
+    <div class="well">
+        <ul *ngFor="let todos of todoList" (click)="changeStatus(todos)">
+            <li class="pointer">{{todos.description}} <span *ngIf="todos.check" class="glyphicon glyphicon-ok"></span></li>
+        </ul>
+    </div>
+</div>
